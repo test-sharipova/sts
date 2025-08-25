@@ -1,0 +1,36 @@
+.promo {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 16px;
+    }
+    &__content {
+        max-width: 582px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 123%;
+        margin-bottom: 16px;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 20px;
+        max-width: 349px;
+    }
+    &__btns {
+        display: flex;
+        gap: 17px;
+    }
+    &__img {
+        max-width: 50%;
+        img {
+            display: block;
+            max-width: 100%;
+            object-fit: contain;
+        }
+    }
+}

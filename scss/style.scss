@@ -1,0 +1,141 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    // font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+    font-family:
+    -apple-system, /* macOS и iOS */
+    BlinkMacSystemFont, /* запасной системный шрифт на старых macOS */
+    "Manrope", /* Windows */
+    Roboto, /* Android */
+    "Helvetica Neue", Helvetica, Arial, /* универсальные sans-serif */
+    sans-serif;
+    color: #000;
+}
+html {
+    scroll-behavior: smooth;
+}
+.body_fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+a, input, select, textarea, button {
+    font-family: inherit;
+}
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+.container {
+    width: 95%;
+    max-width: 1390px;
+    margin: 0 auto;
+    &__wrap {
+        padding: 0 74px;
+    }
+}
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+}
+.fs_16 {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.btn {
+    text-decoration: none;
+    border: none;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    border-radius: 4px;
+    background: #e44f19;
+    padding: 16px 20px;
+    transition: background-color .3s;
+    cursor: pointer;
+    &:hover {
+        background: #ff6e3a;
+    }
+}
+
+.btn-grey {
+    text-decoration: none;
+    border: none;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #e44f19;
+    background: #e9e9e9;
+    padding: 16px 20px;
+    border-radius: 4px;
+    transition: background-color .3s;
+    cursor: pointer;
+    &:hover {
+        background: #dadada;
+    }
+}
+.btn_transparent {
+    border: 1px solid #e44f19;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #e44f19;
+    text-decoration: none;
+   padding: 12px 145px;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: fit-content;
+    margin: 0 auto;
+    transition: background-color .3s;
+    background: none;
+    &:hover {
+        background: rgba(228, 79, 25, 0.1);
+    }
+}
+
+@import '_header.scss';
+@import '_promo.scss';
+@import '_table.scss';
+@import '_price.scss';
+@import '_wins.scss';
+@import '_serv.scss';
+@import '_form.scss';
+@import '_providers.scss';
+@import '_sert.scss';
+@import '_photos.scss';
+@import '_about.scss';
+@import '_form-order.scss';
+@import '_map.scss';
+@import '_footer.scss';
+@import '_loader.scss';
+@import '_modal.scss';
+
+.mobile {
+    display: none!important;
+}
+
+@import '_media.scss';

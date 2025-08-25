@@ -1,0 +1,19 @@
+footer {
+    background: #fff;
+    padding: 24px 0;
+}
+.footer {
+    &__wrapper {
+        display: flex;
+        gap: 87px;
+        align-items: center;
+        p, a {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 133%;
+            color: #ababab;
+            text-decoration: none;
+            
+        }
+    }
+}

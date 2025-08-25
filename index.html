@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__mob">
+            <a href="#" class="logo">
+                <img src="img/logo.svg" alt="логотип" width="105">
+            </a>
+            <div class="header__mob__wrap">
+                <a href="tel:+73517770797" class="header__mob__phone">
+                    <img src="img/phone-icon.svg" alt="телефон" width="16">
+                </a>
+                <div class="hamburger">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="header__menu">
+            <div class="container">
+                <ul class="menu">
+                    <li><a href="">Главная</a></li>
+                    <li><a href="#prod">Продукция</a></li>
+                    <li><a href="#wins">Преимущества</a></li>
+                    <li><a href="#serv">Услуги</a></li>
+                    <li><a href="#postavshiki">Наши поставщики</a></li>
+                    <li><a href="#sert">Сертификаты</a></li>
+                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#cont">Контакты</a></li>
+                    <li class="mobile_btn"><button type="button" class="btn order">Получить предложение</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__head">
+            <div class="container">
+                <div class="container__wrap">
+                    <div class="header__head__wrapper">
+                        <a href="#" class="logo">
+                            <img src="img/logo.svg" alt="логотип" width="105">
+                        </a>
+                        <a href="#" class="download">Скачать актуальный прайс-лист</a>
+                        <div class="header__address">
+                            <p class="header__address__text">
+                                Адрес склада
+
+                            </p>
+                            <a href="#" class="header__address__address">
+                                Копейское шоссе, 48к1
+                            </a>
+                        </div>
+                        <a href="tel:+73517770797" class="header__phone">
+                            +7 (351) 777-07-97
+                        </a>
+                        <a href="mailto:uralvek@mail.ru" class="header__email">
+                            <span>uralvek@mail.ru</span>
+                            Написать на почту
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="promo">
+            <div class="container">
+                <div class="container__wrap">
+                    <div class="promo__wrapper">
+                        <div class="promo__content">
+                            <h1 class="promo__title">
+                                Труба бесшовная ГОСТ 8732-78 из&nbsp;наличия в&nbsp;Челябинске
+                            </h1>
+                            <p class="promo__subtitle">
+                                Реальное наличие металлопроката на&nbsp;складе
+                                по&nbsp;адресу: Копейское шоссе, 48к1
+                            </p>
+                            <div class="promo__btns">
+                                <button type="button" class="btn order">Получить предложение</button>
+                                <a href="#about" class="btn-grey">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="promo__img">
+                            <img src="img/promo-image.png" alt="трубы" width="658">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="table" id="prod">
+            <div class="container">
+                <div class="table__filter">
+                    <div class="container__wrap">
+                        <div class="table__title__wrap">
+                            <h2 class="title">
+                                <span>144 тонны</span> на складе прямо сейчас
+                            </h2>
+                            <p class="grey">Данные на 01 августа 2025 года
+                                <a href="#" class="table__title__wrap__link">Скачать</a>
+                            </p>
+                        </div>
+                        <form action="#" class="table__form">
+                            <p class="title-mob">Фильтры</p>
+                            <button type="button" class="filter-close-mob"></button>
+                            <label class="form-order__label" id="diametr">
+                                <input type="text" class="form-order__input" placeholder="">
+                                <span>Диаметр <output class="mob-num">1</output></span>
+                                <button type="button" class="btn close-filer-input">Применить</button>
+                                 <button type="button" class="close-filter-input2"></button>
+                            </label>
+                            <label class="form-order__label" id="tolshina">
+                                <input type="text" class="form-order__input" placeholder="">
+                                <span>Толщина <output class="mob-num">2</output></span>
+                                <button type="button" class="btn close-filer-input">Применить</button>
+                                <button type="button" class="close-filter-input2"></button>
+                            </label>
+                            <!-- <div class="form__input__wrapper">
+                            
+                            <div class="form__select__wrapper">
+                                <select class="form__input form__select">
+                                    <option value="all" selected>ГОСТ, ОСТ, ТУ</option>
+                                    <option value="8732-78">8732-78</option>
+                                    <option value="8732-78">8732-78</option>
+                                    <option value="8732-78">8732-78</option>
+                                </select>
+                            </div>
+                        </div> -->
+
+                            <div class="select" id="gost">
+                                <div class="select__header">ГОСТ, ОСТ, ТУ <output class="mob-num">2</output></div>
+                                <div class="select__list" >
+                                    <div class="select__item">ГОСТ 8734-75</div>
+                                    <div class="select__item">ТУ 14-3-1128-82</div>
+                                    <div class="select__item">ТУ 14-3Р-55-2001</div>
+
+                                </div>
+                                <button type="button" class="close-filter-select"></button>
+                                 
+                            </div>
+
+                            <div class="select" id="marka">
+                                <div class="select__header">Марка стали <output class="mob-num">2</output></div>
+                                <div class="select__list">
+                                    <div class="select__item">30ХГСА</div>
+                                    <div class="select__item">8732-78</div>
+                                    <div class="select__item">30ХГСА</div>
+
+                                </div>
+                                <button type="button" class="close-filter-select"></button>
+                            </div>
+
+
+                            <button class="btn" type="submit">Применить фильтры</button>
+                            <button type="submit" href="#" class="btn btn_load">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </button>
+                        </form>
+                        <button type="button" class="show-filter">Показать фильтры</button>
+                    </div>
+                </div>
+                <div class="container__wrap">
+
+                    <div class="table__table">
+                        <div class="table__head desktop">
+
+                            <p class="fs_16">Вид металла</p>
+                            <p class="fs_16">Диаметр</p>
+                            <p class="fs_16">Толщина</p>
+                            <p class="fs_16">ГОСТ, ОСТ, ТУ</p>
+                            <p class="fs_16">Марка</p>
+                            <button type="button" class="fs_16 nalichie">Наличие</button>
+                            <button type="button" class="fs_16 cena">Цена</button>
+                            <p class="fs_16">Заказ</p>
+
+                        </div>
+                        <div class="mobile">
+                            <div style="display: flex;justify-content: center;gap: 12px;margin-bottom: 16px; ">
+                                <button type="button" class="fs_16 nalichie">Наличие</button>
+                                <button type="button" class="fs_16 cena">Цена</button>
+                            </div>
+                        </div>
+                        <div class="table__row">
+
+
+
+                            <p class="fs_16 order_name">Труба 299х60<span class="mobile">, гост 8732-78, <br> марка
+                                    30ХГСА</span> </p>
+
+                            <p class="fs_16 desktop">299</p>
+
+                            <p class="fs_16 order_diametr desktop">60</p>
+
+                            <p class="fs_16 order_gosst desktop">8732-78 </p>
+
+                            <p class="fs_16 order_marka desktop">30ХГСА</p>
+
+                            <p class="fs_16 table__row__tn">6.726 тн. </p>
+
+                            <p class="fs_16 table__row__price">275 000 руб</p>
+
+                            <button type="button" class="btn consult_order"> Заказать <span class="desktop">трубу</span>
+                            </button>
+                        </div>
+                        <div class="table__row">
+
+
+
+                            <p class="fs_16 order_name">Труба 299х60<span class="mobile">, гост 8732-78, <br> марка
+                                    30ХГСА</span> </p>
+
+                            <p class="fs_16 desktop">299</p>
+
+                            <p class="fs_16 order_diametr desktop">60</p>
+
+                            <p class="fs_16 order_gosst desktop">8732-78 </p>
+
+                            <p class="fs_16 order_marka desktop">30ХГСА</p>
+
+                            <p class="fs_16 table__row__tn">6.726 тн. </p>
+
+                            <p class="fs_16 table__row__price">275 000 руб</p>
+
+                            <button type="button" class="btn consult_order"> Заказать <span
+                                    class="desktop">трубу</span></button>
+                        </div>
+                        <div class="table__row">
+
+
+
+                            <p class="fs_16 order_name">Труба 299х60<span class="mobile">, гост 8732-78, <br> марка
+                                    30ХГСА</span> </p>
+
+                            <p class="fs_16 desktop">299</p>
+
+                            <p class="fs_16 order_diametr desktop">60</p>
+
+                            <p class="fs_16 order_gosst desktop">8732-78 </p>
+
+                            <p class="fs_16 order_marka desktop">30ХГСА</p>
+
+                            <p class="fs_16 table__row__tn">6.726 тн. </p>
+
+                            <p class="fs_16 table__row__price">275 000 руб</p>
+
+                            <button type="button" class="btn consult_order"> Заказать <span
+                                    class="desktop">трубу</span></button>
+                        </div>
+                        <div class="table__row">
+
+
+
+                            <p class="fs_16 order_name">Труба 299х60<span class="mobile">, гост 8732-78, <br> марка
+                                    30ХГСА</span> </p>
+
+                            <p class="fs_16 desktop">299</p>
+
+                            <p class="fs_16 order_diametr desktop">60</p>
+
+                            <p class="fs_16 order_gosst desktop">8732-78 </p>
+
+                            <p class="fs_16 order_marka desktop">30ХГСА</p>
+
+                            <p class="fs_16 table__row__tn">6.726 тн. </p>
+
+                            <p class="fs_16 table__row__price">275 000 руб</p>
+
+                            <button type="button" class="btn consult_order"> Заказать <span
+                                    class="desktop">трубу</span></button>
+                        </div>
+                        <div class="table__row">
+
+
+
+                            <p class="fs_16 order_name">Труба 299х60<span class="mobile">, гост 8732-78, <br> марка
+                                    30ХГСА</span> </p>
+
+                            <p class="fs_16 desktop">299</p>
+
+                            <p class="fs_16 order_diametr desktop">60</p>
+
+                            <p class="fs_16 order_gosst desktop">8732-78 </p>
+
+                            <p class="fs_16 order_marka desktop">30ХГСА</p>
+
+                            <p class="fs_16 table__row__tn">6.726 тн. </p>
+
+                            <p class="fs_16 table__row__price">275 000 руб</p>
+
+                            <button type="button" class="btn consult_order"> Заказать <span
+                                    class="desktop">трубу</span></button>
+                        </div>
+                        <div class="table__row">
+
+
+
+                            <p class="fs_16 order_name">Труба 299х60<span class="mobile">, гост 8732-78, <br> марка
+                                    30ХГСА</span> </p>
+
+                            <p class="fs_16 desktop">299</p>
+
+                            <p class="fs_16 order_diametr desktop">60</p>
+
+                            <p class="fs_16 order_gosst desktop">8732-78 </p>
+
+                            <p class="fs_16 order_marka desktop">30ХГСА</p>
+
+                            <p class="fs_16 table__row__tn">6.726 тн. </p>
+
+                            <p class="fs_16 table__row__price">275 000 руб</p>
+
+                            <button type="button" class="btn consult_order"> Заказать <span
+                                    class="desktop">трубу</span></button>
+                        </div>
+                        <div class="table__row">
+
+
+
+                            <p class="fs_16 order_name">Труба 299х60<span class="mobile">, гост 8732-78, <br> марка
+                                    30ХГСА</span> </p>
+
+                            <p class="fs_16 desktop">299</p>
+
+                            <p class="fs_16 order_diametr desktop">60</p>
+
+                            <p class="fs_16 order_gosst desktop">8732-78 </p>
+
+                            <p class="fs_16 order_marka desktop">30ХГСА</p>
+
+                            <p class="fs_16 table__row__tn">6.726 тн. </p>
+
+                            <p class="fs_16 table__row__price">275 000 руб</p>
+
+                            <button type="button" class="btn consult_order"> Заказать <span
+                                    class="desktop">трубу</span></button>
+                        </div>
+                        <div class="table__row">
+
+
+
+                            <p class="fs_16 order_name">Труба 299х60<span class="mobile">, гост 8732-78, <br> марка
+                                    30ХГСА</span> </p>
+
+                            <p class="fs_16 desktop">299</p>
+
+                            <p class="fs_16 order_diametr desktop">60</p>
+
+                            <p class="fs_16 order_gosst desktop">8732-78 </p>
+
+                            <p class="fs_16 order_marka desktop">30ХГСА</p>
+
+                            <p class="fs_16 table__row__tn">6.726 тн. </p>
+
+                            <p class="fs_16 table__row__price">275 000 руб</p>
+
+                            <button type="button" class="btn consult_order"> Заказать <span
+                                    class="desktop">трубу</span></button>
+                        </div>
+                        <div class="table__row">
+
+
+
+                            <p class="fs_16 order_name">Труба 299х60<span class="mobile">, гост 8732-78, <br> марка
+                                    30ХГСА</span> </p>
+
+                            <p class="fs_16 desktop">299</p>
+
+                            <p class="fs_16 order_diametr desktop">60</p>
+
+                            <p class="fs_16 order_gosst desktop">8732-78 </p>
+
+                            <p class="fs_16 order_marka desktop">30ХГСА</p>
+
+                            <p class="fs_16 table__row__tn">6.726 тн. </p>
+
+                            <p class="fs_16 table__row__price">275 000 руб</p>
+
+                            <button type="button" class="btn consult_order"> Заказать <span
+                                    class="desktop">трубу</span></button>
+                        </div>
+                        <div class="table__row">
+
+
+
+                            <p class="fs_16 order_name">Труба 299х60<span class="mobile">, гост 8732-78, <br> марка
+                                    30ХГСА</span> </p>
+
+                            <p class="fs_16 desktop">299</p>
+
+                            <p class="fs_16 order_diametr desktop">60</p>
+
+                            <p class="fs_16 order_gosst desktop">8732-78 </p>
+
+                            <p class="fs_16 order_marka desktop">30ХГСА</p>
+
+                            <p class="fs_16 table__row__tn">6.726 тн. </p>
+
+                            <p class="fs_16 table__row__price">275 000 руб</p>
+
+                            <button type="button" class="btn consult_order"> Заказать <span
+                                    class="desktop">трубу</span></button>
+                        </div>
+
+
+                    </div>
+                    <a href="#" class="btn_transparent">Больше предложений</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="price">
+            <div class="container">
+                <div class="price__wrap">
+                    <div class="container__wrap">
+                        <div class="price__wrapper">
+                            <div class="price__content">
+                                <h2 class="title">
+                                    Реальное наличие металлопроката на складе
+                                </h2>
+                                <ul class="price__list">
+                                    <li>
+                                        Актуальные цены на металлопрокат
+                                    </li>
+                                    <li>
+                                        Реальное наличие собственного металла
+                                    </li>
+                                    <li>
+                                        Специальные предложения для посетителей сайта
+                                    </li>
+                                </ul>
+                                <a href="#" download="" class="price__download">
+                                    Скачать прайс-лист <span class="desktop">в формате .pdf</span>
+                                    <span class="price__download__text desktop">Актуальный прайс-лист на 01 августа 2025
+                                        года</span>
+                                    <span class="price__download__text mobile">Обновлен 01 августа 2025 года</span>
+                                </a>
+                            </div>
+                            <div class="price__img">
+                                <img src="img/girl.png" alt="девушка в каске" width="676" class="desktop">
+                                <img src="img/girl-mob.png" alt="девушка в каске" width="266" class="mobile">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wins" id="wins">
+            <div class="container">
+                <div class="container__wrap">
+                    <h2 class="title">
+                        Преимущества сервиса
+                    </h2>
+                    <ul class="wins__list">
+                        <li>
+                            <img src="img/wins-icon1.svg" alt="" width="48">
+                            <p class="wins__title">Отличное состояние</p>
+                            <p class="wins__text">Металлопрокат не старше 3 лет, никакой восстановленной и б/у трубы</p>
+                        </li>
+                        <li>
+                            <img src="img/wins-icon2.svg" alt="" width="48">
+                            <p class="wins__title">Комплектация заказов</p>
+                            <p class="wins__text">При необходимости найдем и поставим недостающие позиции</p>
+                        </li>
+                        <li>
+                            <img src="img/wins-icon3.svg" alt="" width="48">
+                            <p class="wins__title">9 лет на рынке</p>
+                            <p class="wins__text">Опыт работы с 2016 года <br> &nbsp; </p>
+                        </li>
+                        <li>
+                            <img src="img/wins-icon4.svg" alt="" width="48">
+                            <p class="wins__title">Отсрочка платежа</p>
+                            <p class="wins__text">Лояльные условия для проверенных контрагентов</p>
+                        </li>
+                        <li>
+                            <img src="img/wins-icon5.svg" alt="" width="48">
+                            <p class="wins__title">Открытие спецсчетов</p>
+                            <p class="wins__text">При необходимости поставим металлопрокат в рамках ГОЗ</p>
+                        </li>
+                        <li>
+                            <img src="img/wins-icon6.svg" alt="" width="48">
+                            <p class="wins__title">Возврат брака</p>
+                            <p class="wins__text">В случае выявления скрытых заводских дефектов вернем деньги</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="serv" id="serv">
+            <div class="container">
+                <div class="container__wrap">
+                    <h2 class="title">Услуги сервиса</h2>
+                    <ul class="serv__list">
+                        <li>
+                            <p class="serv__title">Резка (газом, лентопил)</p>
+                            <p class="serv__text">Описание услуги, приблизительная стоимость, срок и так далее,
+                                небольшая характеристика</p>
+
+                            <button type="button" class="serv__link order">Заказать услугу</button>
+                            <img src="img/serv1.png" alt="" width="351" class="serv__img">
+                        </li>
+                        <li>
+                            <p class="serv__title">Доставка продукции</p>
+                            <p class="serv__text">Описание услуги, приблизительная стоимость, срок и так далее,
+                                небольшая характеристика</p>
+
+                            <button type="button" class="serv__link order">Заказать услугу</button>
+                            <img src="img/serv2.png" alt="" width="301" class="serv__img">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="form">
+            <div class="container">
+                <div class="container__wrap">
+                    <div class="form__wrapper">
+                        <div class="form__content">
+                            <h2 class="title">
+                                Есть вопросы <br> по&nbsp;наличию или услугам?
+                            </h2>
+                            <p class="form__text">
+                                Позвоните по&nbsp;номеру&nbsp;<nobr>+7 (951) 466-49-99</nobr> или закажите звонок.
+                                Менеджер свяжется с&nbsp;вами в&nbsp;течение 15&nbsp;минут
+                            </p>
+
+                        </div>
+                        <form action="#" class="form__form">
+                            <p class="form__input__text">Введите номер</p>
+                            <label class="form__input__label">
+
+                                <input type="text" class="form__input phone">
+                            </label>
+                            <button type="submit" class="btn">Получить предложение</button>
+                            <div class="form__policy">
+                                <label class="form__policy__checkbox">
+
+                                    <input type="checkbox" required checked>
+                                    <div class="mark"></div>
+                                </label>
+                                <p class="form__policy__text">Я&nbsp;даю согласие на&nbsp;обработку персональных данных
+                                    и&nbsp;подтверждаю, что ознакомлен с&nbsp;Политикой обработки персональных данных.
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="providers" id="postavshiki">
+            <div class="container container_pr0">
+                <div class="container__wrap container_pr0">
+                    <h2 class="title">
+                        Наши поставщики
+                    </h2>
+                    <ul class="providers__list">
+                        <li>
+                            <img src="img/prov-logo1.svg" width="295" alt="">
+                        </li>
+                        <li>
+                            <img src="img/prov-logo2.svg" width="295" alt="">
+                        </li>
+                        <li>
+                            <img src="img/prov-logo3.svg" width="295" alt="">
+                        </li>
+                        <li>
+                            <img src="img/prov-logo4.svg" width="295" alt="">
+                        </li>
+                        <li>
+                            <img src="img/prov-logo5.svg" width="295" alt="">
+                        </li>
+                        <li>
+                            <img src="img/prov-logo6.svg" width="295" alt="">
+                        </li>
+                        <li>
+                            <img src="img/prov-logo7.svg" width="295" alt="">
+                        </li>
+                        <li>
+                            <img src="img/prov-logo8.svg" width="295" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="sert" id="sert">
+            <div class="container">
+                <div class="container__wrap">
+                    <h2 class="title">
+                        Сертификаты на&nbsp;продукцию
+                    </h2>
+                    <ul class="sert__list">
+                        <li><a href="#">
+                                Сертификаты соответствия на трубу ГОСТ 8732-78
+                                <span>от 01 августа 2025 года</span>
+                            </a></li>
+                        <li><a href="#">
+                                Сертификаты соответствия на трубу ГОСТ 8732-78
+                                <span>от 01 августа 2025 года</span>
+                            </a></li>
+                        <li><a href="#">
+                                Сертификаты соответствия на трубу ГОСТ 8732-78
+                                <span>от 01 августа 2025 года</span>
+                            </a></li>
+                        <li><a href="#">
+                                Сертификаты соответствия на трубу ГОСТ 8732-78
+                                <span>от 01 августа 2025 года</span>
+                            </a></li>
+                        <li><a href="#">
+                                Сертификаты соответствия на трубу ГОСТ 8732-78
+                                <span>от 01 августа 2025 года</span>
+                            </a></li>
+                        <li><a href="#">
+                                Сертификаты соответствия на трубу ГОСТ 8732-78
+                                <span>от 01 августа 2025 года</span>
+                            </a></li>
+                        <li><a href="#">
+                                Сертификаты соответствия на трубу ГОСТ 8732-78
+                                <span>от 01 августа 2025 года</span>
+                            </a></li>
+                        <li><a href="#">
+                                Сертификаты соответствия на трубу ГОСТ 8732-78
+                                <span>от 01 августа 2025 года</span>
+                            </a></li>
+                        <li><a href="#">
+                                Сертификаты соответствия на трубу ГОСТ 8732-78
+                                <span>от 01 августа 2025 года</span>
+                            </a></li>
+                        <li><a href="#">
+                                Сертификаты соответствия на трубу ГОСТ 8732-78
+                                <span>от 01 августа 2025 года</span>
+                            </a></li>
+                        <li><a href="#">
+                                Сертификаты соответствия на трубу ГОСТ 8732-78
+                                <span>от 01 августа 2025 года</span>
+                            </a></li>
+                        <li><a href="#">
+                                Сертификаты соответствия на трубу ГОСТ 8732-78
+                                <span>от 01 августа 2025 года</span>
+                            </a></li>
+                        <li><a href="#">
+                                Сертификаты соответствия на трубу ГОСТ 8732-78
+                                <span>от 01 августа 2025 года</span>
+                            </a></li>
+                        <li><a href="#">
+                                Сертификаты соответствия на трубу ГОСТ 8732-78
+                                <span>от 01 августа 2025 года</span>
+                            </a></li>
+                        <li><a href="#">
+                                Сертификаты соответствия на трубу ГОСТ 8732-78
+                                <span>от 01 августа 2025 года</span>
+                            </a></li>
+                    </ul>
+                    <button type="button" class="btn_transparent show-more-sert">Показать еще</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="photos" id="about">
+            <div class="container container_pr0">
+                <div class="container__wrap container_pr0">
+                    <h2 class="title">
+                        Фотографии со&nbsp;склада
+                    </h2>
+                    <ul class="photos__list">
+                        <li><a href="img/photo1.png" data-fancybox="gallery"><img src="img/photo1.png"
+                                    alt="фото со склада"></a></li>
+                        <li><a href="img/photo2.png" data-fancybox="gallery"><img src="img/photo2.png"
+                                    alt="фото со склада"></a></li>
+                        <li><a href="img/photo3.png" data-fancybox="gallery"><img src="img/photo3.png"
+                                    alt="фото со склада"></a></li>
+                        <li><a href="img/photo4.png" data-fancybox="gallery"><img src="img/photo4.png"
+                                    alt="фото со склада"></a></li>
+                        <li><a href="img/photo2.png" data-fancybox="gallery"><img src="img/photo2.png"
+                                    alt="фото со склада"></a></li>
+                        <li><a href="img/photo1.png" data-fancybox="gallery"><img src="img/photo1.png"
+                                    alt="фото со склада"></a></li>
+                    </ul>
+
+                    <button type="button" class="btn_transparent show-more-photos">Показать еще</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="container__wrap">
+                    <div class="about__wrapper">
+                        <div class="about__item">
+                            <a href="#" class="logo">
+                                <img src="img/logo.svg" alt="логотип" width="130">
+                            </a>
+                            <h2 class="title">О компании</h2>
+                            <p class="about__text">
+                                Компания СтальТрубСервис была основана в&nbsp;2016 году и&nbsp;с&nbsp;момента создания
+                                прошла развитие до&nbsp;универсального поставщика трубного проката. В&nbsp;нашем
+                                ассортименте имеется большой выбор бесшовных труб. Главной задачей нашей компании
+                                является максимально полное удовлетворение потребностей клиентов, которые становятся
+                                нашими постоянными заказчиками.
+                            </p>
+                        </div>
+                        <div class="about__item">
+                            <p class="about__title">
+                                Со&nbsp;своей стороны мы&nbsp;можем гарантировать нашим покупателям:
+                            </p>
+                            <ul class="about__list">
+                                <li>высокое качество трубного проката;</li>
+                                <li>предельную простоту оформления и оперативное исполнение заказов;</li>
+                                <li>возможность поставок любых партий трубного проката;</li>
+                                <li>предоставление сопутствующих услуг &ndash; от доставки до резки;</li>
+                                <li>точное соблюдение договорных обязательств по объёмам и срокам поставок.</li>
+                            </ul>
+                        </div>
+                        <div class="about__item">
+                            <h2 class="title">
+                                Реквизиты <br> и&nbsp;история
+                            </h2>
+                            <ul class="about__btns">
+                                <li><a href="" class="about__kontur">Компания в Контур Фокус</a></li>
+                                <li><a href="" class="about__sbis">СБИС</a></li>
+                            </ul>
+                        </div>
+                        <div class="about__item">
+                            <ul class="about__rekw">
+                                <li>ИНН 7447315701</li>
+                                <li>КПП 744701001</li>
+                                <li>ОГРН 1247400000902</li>
+                            </ul>
+                            <p class="about__address">
+                                Юр. адрес 454128, Челябинская обл, г.о. Челябинский, г Челябинск, ул Братьев Кашириных,
+                                131Б, кв 709
+                            </p>
+                            <a href="" class="about__kontur">Скачать реквизиты</a>
+                        </div>
+                        <div class="about__item about__item__last">
+                            <div class="about__item__last__wrap">
+                                <a href="https://e-metall.ru/postavshhiki/staltrubservic-g-cheljabinsk/"><img
+                                        src="img/name.svg"
+                                        alt="СтальТрубСервис Компания размещена и проверена на Е-Металл"
+                                        width="336"></a>
+                                <div class="about__item__raiting__wrap">
+                                    <p class="about__item__raiting">
+                                        Высокая оценка пользователей
+                                        <span>9.9</span>
+                                    </p>
+                                    <a href="https://e-metall.ru/postavshhiki/staltrubservic-g-cheljabinsk/"
+                                        class="about__kontur">Перейти на&nbsp;страницу компании</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-order">
+            <div class="container">
+                <div class="container__wrap">
+                    <div class="form-order__wrap">
+                        <h2 class="title">
+                            Отправьте заявку и&nbsp;узнайте актуальные цены в&nbsp;течение 30&nbsp;минут
+                        </h2>
+                        <p class="form-order__text">
+                            Подберем трубу под ваши требования и&nbsp;задачи&nbsp;&mdash; Дадим развернутую консультацию
+                            по&nbsp;ГОСТам и&nbsp;ТУ, диаметрам и&nbsp;стенкам, а&nbsp;также маркам стали
+                        </p>
+                        <form action="#" class="form-order__form">
+                            <label class="form-order__label">
+                                <input type="text" name="username" class="form-order__input" placeholder="" required>
+                                <span>Введите имя</span>
+
+                            </label>
+                            <label class="form-order__label">
+                                <input type="text" name="userphone" class="form-order__input phone" placeholder=""
+                                    required>
+                                <span>Введите номер телефона</span>
+
+                            </label>
+                            <label class="form-order__label">
+                                <input type="email" name="useremail" class="form-order__input email-input"
+                                    placeholder="" id="email-input" required>
+                                <span>Введите адерс эл.почты <span class="error-message"
+                                        style="display: none; color: #dc3545; font-size: 14px; margin-top: 5px;">Пожалуйста,
+                                        введите корректный email</span></span>
+
+                            </label>
+
+                            <div class="form-order__textarea__wrap">
+                                <textarea name="usermessage" class="form-order__textarea"
+                                    placeholder="Введите состав заказа"></textarea>
+                                <div class="main-form__download">
+
+                                    <label for="file">Прикрепить файл</label>
+                                    <input type="file" name="myfile" id="file" class="myfile">
+                                </div>
+                            </div>
+                            <div class="form-order__policy">
+                                <label class="form-order__policy__checkbox">
+
+                                    <input type="checkbox" required checked>
+                                    <div class="mark"></div>
+                                </label>
+                                <p class="form-order__policy__text">Я&nbsp;даю согласие на&nbsp;обработку персональных
+                                    данных и&nbsp;подтверждаю, что ознакомлен с&nbsp;Политикой обработки персональных
+                                    данных.</p>
+                            </div>
+                            <button type="submit" class="btn">Отправить заявку</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map" id="cont">
+            <div style="position:relative;overflow:hidden;"><a
+                    href="https://yandex.ru/maps/56/chelyabinsk/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Челябинск</a><a
+                    href="https://yandex.ru/maps/56/chelyabinsk/house/kopeyskoye_shosse_48k1/YkgYcgFnT0QHQFtvfX11cX9mZw==/inside/?ll=61.479134%2C55.139473&tab=inside&utm_medium=mapframe&utm_source=maps&z=15.2"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Организации внутри: Челябинск,
+                    Копейское шоссе, 48к1 — Яндекс Карты</a><iframe
+                    src="https://yandex.ru/map-widget/v1/?ll=61.479134%2C55.139473&mode=whatshere&tab=inside&utm_source=share&whatshere%5Bpoint%5D=61.467610%2C55.140353&whatshere%5Bzoom%5D=17&z=15.2"
+                    width="100%" height="737" frameborder="0" allowfullscreen="true"
+                    style="position:relative;"></iframe></div>
+
+            <div class="map__content">
+                <img src="img/image-sklad.png" alt="" width="505">
+                <div class="map__content__wrap">
+                    <div class="map__contacts">
+                        <div class="map__item">
+                            Телефон
+                            <a href="tel:+79514664999">+7 (951) 466-49-99</a>
+                        </div>
+                        <div class="map__item">
+                            Электронная почта
+                            <a href="mailto:uralvek@mail.ru">uralvek@mail.ru</a>
+                        </div>
+                        <div class="map__item">
+                            Адрес склада
+                            <a href="https://yandex.ru/maps/-/CLAUB4It" target="_blank">Копейское шоссе, 48к1</a>
+                        </div>
+                    </div>
+                    <a href="https://go.2gis.com/6wXOJ" class="map__btn" target="_blank">Открыть в 2ГИС</a>
+                    <a href="https://yandex.ru/maps/-/CLAUFL4O" class="map__btn" target="_blank">Проложить маршрут<span
+                            class="desktop"> в Яндекс.Навигаторе</span></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__wrapper">
+                <p>© ООО «Стальтрубсервис», 2025 <br>
+                    Реальное наличие металлопроката на складе</p>
+                <p>
+                    ИНН 7447315701 <br>
+                    ОГРН 1247400000902
+                </p>
+                <a href="">
+                    Политика конфиденциальности
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- modal -->
+    <div class="overlay"></div>
+    <div class="modal">
+        <button class="modal__close"></button>
+        <div class="form__wrapper">
+                        <div class="form__content">
+                            <h2 class="title">
+                                Есть вопросы <br> по&nbsp;наличию или услугам?
+                            </h2>
+                            <p class="form__text">
+                                Позвоните по&nbsp;номеру&nbsp;<nobr>+7 (951) 466-49-99</nobr> или закажите звонок.
+                                Менеджер свяжется с&nbsp;вами в&nbsp;течение 15&nbsp;минут
+                            </p>
+
+                        </div>
+                        <form action="#" class="form__form">
+                            <p class="form__input__text">Введите номер</p>
+                            <label class="form__input__label">
+
+                                <input type="text" class="form__input phone">
+                            </label>
+                            <button type="submit" class="btn">Получить предложение</button>
+                            <div class="form__policy">
+                                <label class="form__policy__checkbox">
+
+                                    <input type="checkbox" required="" checked="">
+                                    <div class="mark"></div>
+                                </label>
+                                <p class="form__policy__text">Я&nbsp;даю согласие на&nbsp;обработку персональных данных
+                                    и&nbsp;подтверждаю, что ознакомлен с&nbsp;Политикой обработки персональных данных.
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+    </div>
+    <div class="modal_order">
+        <button class="modal__close"></button>
+        <div class="form-order__wrap">
+                        <h2 class="title">
+                            Отправьте заявку и&nbsp;узнайте актуальные цены в&nbsp;течение 30&nbsp;минут
+                        </h2>
+                        <p class="form-order__text">
+                            Подберем трубу под ваши требования и&nbsp;задачи&nbsp;— Дадим развернутую консультацию
+                            по&nbsp;ГОСТам и&nbsp;ТУ, диаметрам и&nbsp;стенкам, а&nbsp;также маркам стали
+                        </p>
+                        <form action="#" class="form-order__form">
+                            <label class="form-order__label">
+                                <input type="text" name="username" class="form-order__input" placeholder="" required="">
+                                <span>Введите имя</span>
+
+                            </label>
+                            <label class="form-order__label">
+                                <input type="text" name="userphone" class="form-order__input phone" placeholder="" required="">
+                                <span>Введите номер телефона</span>
+
+                            </label>
+                            <label class="form-order__label">
+                                <input type="email" name="useremail" class="form-order__input email-input" placeholder="" id="email-input" required="">
+                                <span>Введите адерс эл.почты <span class="error-message" style="display: none; color: #dc3545; font-size: 14px; margin-top: 5px;">Пожалуйста,
+                                        введите корректный email</span></span>
+
+                            </label>
+
+                            <div class="form-order__textarea__wrap form__textarea__wrapper">
+                                <textarea name="usermessage" class="form-order__textarea" placeholder="Введите состав заказа"></textarea>
+                                
+                            </div>
+                            <div class="form-order__policy">
+                                <label class="form-order__policy__checkbox">
+
+                                    <input type="checkbox" required="" checked="">
+                                    <div class="mark"></div>
+                                </label>
+                                <p class="form-order__policy__text">Я&nbsp;даю согласие на&nbsp;обработку персональных
+                                    данных и&nbsp;подтверждаю, что ознакомлен с&nbsp;Политикой обработки персональных
+                                    данных.</p>
+                            </div>
+                            <button type="submit" class="btn">Отправить заявку</button>
+                        </form>
+                    </div>
+    </div>
+
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <script src="js/imask.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

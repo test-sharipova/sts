@@ -1,0 +1,133 @@
+.form {
+    padding: 10px 0 30px;
+    color: #fff;
+
+    &__wrapper {
+        border-radius: 10px;
+        background: #313131;
+        padding: 69px 85px 61px;
+        display: flex;
+        gap: 113px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #fff;
+        margin-top: 15px;
+        max-width: 396px;
+    }
+
+    &__form {
+        max-width: 381px;
+
+        .btn {
+            width: 100%;
+            margin-bottom: 22px;
+        }
+
+    }
+
+    &__input {
+        border: 1px solid #4d4d4d;
+        border-radius: 4px;
+        height: 48px;
+        padding: 12px 20px 12px 40px;
+        background: #3e3e3e;
+        width: 100%;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        color: #fff;
+        transition: border-color .1s;
+        &:focus {
+            border: 1px solid #fff;
+            outline: none;
+        }
+
+        &__text {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+            color: #fff;
+            margin-bottom: 13px;
+        }
+
+        &__label {
+            display: block;
+            position: relative;
+            margin-bottom: 22px;
+
+            &::before {
+                content: '+7';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 20px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 100%;
+                color: #fff;
+            }
+        }
+    }
+
+    &__policy {
+        display: flex;
+        gap: 8px;
+        align-items: start;
+
+        &__checkbox {
+            border: 1px solid rgba(255,255,255, .3);
+            border-radius: 4px;
+            width: 16px;
+            height: 16px;
+            min-width: 16px;
+            min-height: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            &:has(input:checked) {
+                border-color: #fff;
+            }
+            &:hover {
+                border-color: #fff;
+            }
+
+            .mark {
+
+                display: none;
+                width: 10px;
+                height: 6px;
+                background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.95268 0.190582C8.29765 -0.0635106 8.78372 -0.0635443 9.12846 0.190582L9.19975 0.249176L9.27104 0.319489C9.59937 0.6843 9.57474 1.24056 9.19975 1.57828L4.56205 5.75113L4.54252 5.76675L4.50834 5.79507L4.48881 5.8107C4.36276 5.90324 4.21939 5.96042 4.07572 5.9855C3.96148 6.00536 3.84342 6.0053 3.72904 5.9855C3.55694 5.95557 3.38524 5.87916 3.24272 5.75113L0.80131 3.55484C0.400866 3.19464 0.400866 2.58594 0.80131 2.22574L0.872599 2.16715C1.21759 1.91301 1.70353 1.91274 2.04838 2.16715L2.11967 2.22574L3.90092 3.8273L7.88139 0.249176L7.95268 0.190582ZM1.78471 2.59781C1.76231 2.57767 1.73886 2.56019 1.71342 2.54507L1.78471 2.59781Z' fill='white'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+
+
+            }
+
+            input {
+                opacity: 0;
+                width: 1px;
+                height: 1px;
+                position: absolute;
+                margin: -1px;
+                clip: rect(0, 0, 0, 0);
+                font-size: 0;
+
+                &:checked+.mark {
+                    display: block;
+                }
+                
+            }
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+    }
+}

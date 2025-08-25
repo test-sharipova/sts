@@ -1,0 +1,136 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    display: none;
+    z-index: 10;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    max-width: 747px;
+    z-index: 20;
+
+    &__close {
+        position: absolute;
+        cursor: pointer;
+        mask: url(../img/cross.svg) no-repeat center/24px 24px;
+        display: block;
+        width: 48px;
+        height: 48px;
+        border: none;
+        top: 12px;
+        right: 12px;
+        background-color: #000;
+    }
+
+    .form__wrapper {
+        flex-direction: column;
+        gap: 24px;
+        padding: 48px;
+    }
+
+    .form {
+        &__form {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        &__text {
+            max-width: 100%;
+        }
+    }
+}
+
+.modal_order {
+
+    display: none;
+    width: 917px;
+    padding: 48px 49px 56px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.15);
+    z-index: 101;
+    position: fixed;
+    top: 53.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &__close {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        cursor: pointer;
+    }
+
+
+
+    .remove__input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+        background-color: #f0f0f0;
+        position: relative;
+        border: none;
+        cursor: pointer;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            display: block;
+            background-color: #000;
+            mask: url(../img/remove-file.svg) no-repeat center/contain;
+        }
+
+    }
+
+    .form__input__order__wrap {
+        position: absolute;
+        width: calc(100% - 16px);
+        padding-right: 20px;
+        bottom: 8px;
+        left: 8px;
+        background: #fff;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        color: #000;
+        padding: 6px 12px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        input {
+            background-color: #fff;
+            border: none;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 143%;
+            color: #000;
+        }
+        &:hover {
+            background: #d9d9d9;
+            input {
+                background: #d9d9d9;
+            }
+            .remove__input {
+                            background-color: #000;
+                            &::after {
+                                background-color: #fff;
+                            }
+                        }
+        }
+    }
+}
