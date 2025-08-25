@@ -429,6 +429,7 @@
             }
             .select {
                 border: none;
+                height: 57px;
                 &::after {
                     content: '';
                     display: block;
@@ -440,6 +441,7 @@
                     right: 0;
                 }
                 &__header {
+                    height: 57px;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 150%;
@@ -805,6 +807,9 @@
             gap: 18px;
             .btn {
                 height: 48px;
+            }
+            #email-input:invalid:not(:placeholder-shown) {
+                background: #f0f0f0;
             }
         }
         &__textarea {
