@@ -27,8 +27,23 @@
             color: #e44f19;
             text-decoration: none;
             transition: color .3s;
+            display: flex;
+            gap: 8px;
+            align-items: center;
             &:hover {
                 color: #000;
+                &::after {
+                    background-color: #000;
+                }
+            }
+            &::after {
+                content: '';
+                display: block;
+                width: 12px;
+                height: 16px;
+                background-color: #e44f19;
+                mask: url(../img/address-arrow.svg) no-repeat center/contain;
+                transition: background-color .3s;
             }
         }
     }
