@@ -20,7 +20,7 @@
             }
         }
         &:nth-child(2) {
-            padding: 69px 73px 60px;
+            padding: 69px 124px 60px 73px;
         }
         &:nth-child(3) {
             padding: 39px 52px 44px;
@@ -120,6 +120,10 @@
         justify-content: center;
         height: 40px;
         width: fit-content;
+        transition: bacground-color .3s;
+        &:hover {
+            background: #dadada;
+        }
     }
     &__sbis {
         font-weight: 400;
@@ -136,6 +140,10 @@
         justify-content: center;
         padding: 8px 16px;
         width: fit-content;
+        transition: bacground-color .3s;
+        &:hover {
+            background: #ff6e3a;
+        }
     }
     &__rekw {
         display: flex;

@@ -2,7 +2,7 @@
     padding: 40px 0 80px;
 
     &__wrap {
-        max-width: 839px;
+        max-width: 821px;
         margin: 0 auto;
 
         .title {
@@ -23,7 +23,7 @@
 
     &__form {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 3fr 5fr;
         gap: 24px 20px;
 
         .btn {

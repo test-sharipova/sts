@@ -5,14 +5,8 @@
 }
 
 body {
-    // font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif;
-    font-family:
-    -apple-system, /* macOS и iOS */
-    BlinkMacSystemFont, /* запасной системный шрифт на старых macOS */
-    "Manrope", /* Windows */
-    Roboto, /* Android */
-    "Helvetica Neue", Helvetica, Arial, /* универсальные sans-serif */
-    sans-serif;
+    font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+    
     color: #000;
 }
 html {

@@ -37,6 +37,9 @@
             line-height: normal;
             text-decoration: none;
             display: block;
+            &:hover {
+                opacity: .75;
+            }
         }
     }
     &__btn {
@@ -55,5 +58,9 @@
         border: none;
         padding: 8px 16px;
         margin-top: 4px;
+        transition: bacground-color .3s;
+        &:hover {
+            background: #dadada;
+        }
     }
 }
