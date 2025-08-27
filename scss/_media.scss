@@ -83,6 +83,10 @@
 }
 
 @media screen and (max-width:767px) {
+    input {
+    -webkit-appearance: none; 
+    border-radius: 0;        
+    }
     .desktop {
         display: none!important;
     }
